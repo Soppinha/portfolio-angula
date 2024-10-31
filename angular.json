@@ -37,7 +37,7 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/css/tailwind.css"
             ],
             "scripts": []
           },
@@ -95,12 +95,15 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/css/tailwind.css"
             ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "228f8734-87f8-4506-bde2-0bfa9eab7939"
   }
 }
