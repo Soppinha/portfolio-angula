@@ -1,13 +1,31 @@
-<div [ngClass]="{'drop-shadow-[0_3px_2px_rgba(0,0,0,0.5)] transition-all delay-100' : hasShadow}"
-    class="fixed top-0 left-0 right-0 z-[99] px-[1.5rem] lg:px-[3rem] md:px-[3rem] pt-[2rem] lg:py-[1rem] md:py-[1rem] h-fit transition-all delay-100 duration-300 ">
+<nav [ngClass]="{'drop-shadow-[0_3px_2px_rgba(0,0,0,0.5)] transition-all delay-100' : hasShadow}"
+     class="fixed top-0 left-0 right-0 z-[99] h-fit transition-all delay-100 duration-300 ">
 
-    <div class="hidden lg:flex md:flex sm:hidden justify-between items-center">
-        <logo-link />
-        <nav-list />
-        <social-list />
+  <div class="hidden lg:flex justify-between items-center px-[48px] pt-[30px] pb-[16px]">
+    <logo/>
+    <nav-list/>
+    <social-list/>
+  </div>
+
+  <div [ngClass]="{'bg-grey-black' : isChecked}"
+       class="flex lg:hidden flex-col">
+    <div class="flex flex-row justify-between items-center w-full px-[32px] md:px-[48px] pt-[32px] pb-[16px]">
+      <logo/>
+      <input (change)="toggleChecked()"
+             [checked]=isChecked
+             id="checkbox"
+             type="checkbox"
+      >
+      <label class="toggle" for="checkbox">
+        <div class="bar bar--top"></div>
+        <div class="bar bar--middle"></div>
+        <div class="bar bar--bottom"></div>
+      </label>
     </div>
 
-    <div class="flex lg:hidden md:hidden sm:flex flex-col">
-
+    <div *ngIf="isChecked" class="flex flex-col w-full">
+      <nav-list/>
+      <social-list/>
     </div>
-</div>
+  </div>
+</nav>

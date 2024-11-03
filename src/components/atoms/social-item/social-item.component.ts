@@ -1,11 +1,11 @@
 import { Component, Input } from "@angular/core";
 
 @Component({
-    selector: 'social-button',
-    templateUrl: './social-button.component.html',
-    styleUrl: './social-button.component.css'
+    selector: 'social-item',
+    templateUrl: './social-item.component.html',
+    styleUrl: './social-item.component.css'
 })
-export class SocialButtonComponent {
+export class SocialItemComponent {
     @Input() imageUrl: string = '';
     @Input() aria: string = '';
     @Input() link: string = '';

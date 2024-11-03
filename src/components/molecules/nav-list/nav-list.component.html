@@ -1,5 +1,14 @@
-<ul class="flex gap-4">
-    <nav-item text="Sobre mim" sectionId="about" className="flex items-center text-yellow-lemonade"/>
-    <nav-item text="Projetos" sectionId="projects" className="flex items-center text-white"/>
-    <nav-item text="Certificados" sectionId="certificates" className="flex items-center text-white"/>
+<ul class="flex flex-col lg:flex-row gap-0 lg:gap-4">
+
+  <nav-item [sectionId]="'about'"
+            [text]="'Sobre mim'"
+            class="items-center text-yellow-lemonade border-y border-[#404040] lg:border-none md:border-none"/>
+
+  <nav-item [sectionId]="'projects'"
+            [text]="'Projetos'"
+            class="items-center text-white"/>
+
+  <nav-item [sectionId]="'certificates'"
+            [text]="'Certificados'"
+            class="items-center text-white border-y border-[#404040] lg:border-none md:border-none"/>
 </ul>

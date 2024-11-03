@@ -7,7 +7,6 @@ import { Component, Input } from "@angular/core";
 export class NavItemComponent {
     @Input() text: string = '';
     @Input() sectionId: string = '';
-    @Input() className: string = '';
 
     onScrollToSection(): void {
         const element = document.getElementById(this.sectionId);

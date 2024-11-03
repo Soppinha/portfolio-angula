@@ -1,6 +1,12 @@
-<li class="flex flex-col relative group cursor-pointer">
-    <div (click)="onScrollToSection()" class="text-[12px] lg:text-[16px] md:text-[14px] sm:text-[12px] font-label font-extralight" [ngClass]="className">{{text}}</div>
-    <div
-        class="absolute top-full left-1/2 w-0 h-[4px] rounded bg-intense-purple translate-x-[-50%] duration-500 group-hover:w-full">
-    </div>
+<li class="flex flex-col relative group cursor-pointer px-[32px] lg:px-0 py-3 lg:py-0">
+
+  <div (click)="onScrollToSection()"
+       class="text-[18px] lg:md:text-[18px] font-label font-extralight"
+  >
+    {{ text }}
+  </div>
+
+  <div
+    class="hidden lg:flex absolute top-full left-1/2 w-0 h-[4px] rounded bg-intense-purple translate-x-[-50%] duration-500 group-hover:w-full">
+  </div>
 </li>
