@@ -1,11 +1,11 @@
 import { Component, HostListener, Input } from "@angular/core";
 
 @Component({
-    selector: "navbar",
+    selector: "organism-navbar",
     templateUrl: "./navbar.component.html",
     styleUrl: "./navbar.component.css"
 })
-export class NavbarComponent {
+export class OrganismNavbarComponent {
     isChecked = false;
     hasShadow = false;
 

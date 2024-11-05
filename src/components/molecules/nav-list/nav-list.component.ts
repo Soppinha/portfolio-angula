@@ -1,9 +1,9 @@
 import { Component } from "@angular/core";
 
 @Component({
-    selector: "nav-list",
+    selector: "molecule-nav-list",
     templateUrl: "./nav-list.component.html"
 })
-export class NavListComponent {
+export class MoleculeNavListComponent {
 
 }

@@ -1,10 +1,10 @@
 import { Component, Input } from "@angular/core";
 
 @Component({
-    selector: "nav-item",
+    selector: "atom-nav-item",
     templateUrl: "./nav-item.component.html"
 })
-export class NavItemComponent {
+export class AtomNavItemComponent {
     @Input() text: string = '';
     @Input() sectionId: string = '';
 
