@@ -2,8 +2,7 @@ import { Component, HostListener, Input } from "@angular/core";
 
 @Component({
     selector: "organism-navbar",
-    templateUrl: "./navbar.component.html",
-    styleUrl: "./navbar.component.css"
+    templateUrl: "./navbar.component.html"
 })
 export class OrganismNavbarComponent {
     isChecked = false;

@@ -5,6 +5,9 @@ const config = {
   mode: 'jit',
   content: [
     './src/**/*.{html,ts}',
+    '../components/**/**/*.{html,ts}',
+    '../app/**/*.{html,ts}',
+    '../index.html'
   ],
   prefix: "",
   theme: {
