@@ -25,7 +25,6 @@ import {AtomPortfolioImgComponent} from '../components/atoms/portfolio-img/portf
     AtomPortfolioImgComponent,
     MoleculeNavListComponent,
     MoleculeSocialListComponent,
-
   ],
   providers: [],
   bootstrap: [AppComponent]

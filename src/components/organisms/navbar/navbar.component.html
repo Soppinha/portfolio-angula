@@ -1,5 +1,5 @@
 <nav [ngClass]="{'drop-shadow-[0_3px_2px_rgba(0,0,0,0.5)]' : hasShadow}"
-     class="fixed top-0 left-0 right-0 z-[99] h-fit transition-all delay-100 duration-300 ">
+     class="fixed top-0 left-0 right-0 z-[99] h-fit transition-all delay-100 duration-300 bg-intense-grey">
 
   <div class="hidden lg:flex justify-between items-center px-12 py-5">
     <atom-logo/>
@@ -9,7 +9,7 @@
 
   <div [ngClass]="{'bg-grey-black' : isChecked}"
        class="flex lg:hidden flex-col">
-    <div class="flex flex-row justify-between items-center w-full px-8 md:px-12 py-5">
+    <div class="flex flex-row justify-between items-center w-full px-12 py-5">
       <atom-logo />
       <atom-menu-button [isChecked]="isChecked" (toggle)="toggleChecked()"/>
     </div>

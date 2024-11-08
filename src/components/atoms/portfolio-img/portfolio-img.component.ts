@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'atom-portfolio-img',
@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   templateUrl: './portfolio-img.component.html'
 })
 export class AtomPortfolioImgComponent {
-  imageUrl = 'https://raw.githubusercontent.com/Soppinha/my-icons/refs/heads/main/portifolio/images/meu-portfolio.svg';
+  @Input() imageUrl : string = '';
 }
